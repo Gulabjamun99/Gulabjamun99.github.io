@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LensDraft - Scanner & Resizer</title>
+    <meta name="description" content="Official website for LensDraft - Scanner & Resizer. Ultra-fast, 100% offline document scanner, passport photo resizer, and PDF utility.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-sub: #475569;
+            --border: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 640px;
+            width: 100%;
+            background: var(--card-bg);
+            border-radius: 24px;
+            padding: 48px 36px;
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.07);
+            border: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .logo-badge {
+            width: 76px;
+            height: 76px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);
+            color: white;
+            font-size: 34px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: var(--text-main);
+            margin-bottom: 12px;
+        }
+
+        .tagline {
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text-sub);
+            margin-bottom: 28px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 32px;
+            text-align: left;
+        }
+
+        .feature-card {
+            background: #f1f5f9;
+            padding: 14px 16px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 13.5px;
+            font-weight: 600;
+            color: #334155;
+        }
+
+        .feature-icon {
+            font-size: 18px;
+        }
+
+        .play-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #0f172a;
+            color: white;
+            padding: 16px 36px;
+            border-radius: 14px;
+            font-weight: 700;
+            font-size: 16px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            box-shadow: 0 8px 18px rgba(15, 23, 42, 0.2);
+            width: 100%;
+        }
+
+        .play-btn:hover {
+            background: #1e293b;
+            transform: translateY(-1px);
+        }
+
+        .play-icon {
+            width: 22px;
+            height: 22px;
+        }
+
+        .footer {
+            margin-top: 36px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            color: #94a3b8;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer a {
+            color: var(--text-sub);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .footer a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 32px 20px;
+            }
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-badge">
+            📄
+        </div>
+        <h1>LensDraft - Scanner & Resizer</h1>
+        <p class="tagline">
+            Professional document scanning, passport photo resizing, offline AI tools, and multi-page PDF generation — 100% private and on-device.
+        </p>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="feature-icon">⚡</span>
+                <span>Ultra-Fast Scanning</span>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🔒</span>
+                <span>100% Offline & Private</span>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🖼️</span>
+                <span>Passport & Exam Resizer</span>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">📑</span>
+                <span>Multi-Page PDF Tools</span>
+            </div>
+        </div>
+
+        <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.smartscan.ai.pdfscanner" target="_blank" rel="noopener">
+            <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3.609 1.814L13.792 12 3.61 22.186a2.006 2.006 0 0 1-.61-1.464V3.278c0-.568.226-1.082.609-1.464zm11.241 11.244l2.583 2.583-12.38 7.07 9.797-9.653zm0-2.116L5.053 1.289l12.38 7.07-2.583 2.583zm1.488 1.488l3.153 1.8c.84.48.84 1.26 0 1.74l-3.153 1.8-2.316-2.316 2.316-3.024z"/>
+            </svg>
+            Get it on Google Play
+        </a>
+
+        <div class="footer">
+            <a href="https://github.com/Gulabjamun99/smartscan-privacy" target="_blank" rel="noopener">Privacy Policy</a>
+            <span>•</span>
+            <a href="/app-ads.txt">app-ads.txt</a>
+            <span>•</span>
+            <span>Gulabjamun99 Developer</span>
+        </div>
+    </div>
+</body>
+</html>
